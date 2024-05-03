@@ -1,0 +1,272 @@
+/* GENEL STİL */
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #EEEEEE;
+}
+
+.container {
+    margin-top: 10px;
+    max-width: 800px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #393E46;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#repos a#repoName {
+    color: #EEEEEE;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.page-heading {
+    margin-top: 30px;
+}
+
+#fullName {
+    color: #EEEEEE;
+}
+
+#bio {
+    color: #EEEEEE;
+    margin-bottom: 10px;
+}
+
+/* ARAMA FORMU */
+.search h3 {
+    margin-bottom: 10px;
+    color: #EEEEEE;
+    font-size: 40px;
+    text-align: center;
+}
+
+.search p {
+    font-size: 15px;
+    color: #EEEEEE;
+}
+
+/* SON ARAMALAR */
+#lastSearch {
+    text-align: center;
+}
+
+#clear-last-users {
+    margin-top: 20px;
+}
+
+/* REPOSITORIES */
+#repos .card-body {
+    margin-bottom: 15px;
+}
+
+#repos a {
+    text-decoration: none;
+    color: #222831;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 576px) {
+    .container {
+        margin-top: 20px;
+    }
+
+    .searchContainer {
+        max-width: 90%;
+    }
+
+    .col-md-6 {
+        text-align: right;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: right;
+    }
+
+    #repos .col-md-6 {
+        float: right;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: right;
+    }
+
+    #repos .col-md-6 {
+        float: right;
+        margin-left: auto;
+    }
+
+    #repos .card-body {
+        height: auto;
+        min-height: 100px;
+    }
+
+    #repos a#repoName {
+        font-size: 16px;
+    }
+
+    #repos .col-md-6 .btn {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    #repos .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: right;
+    }
+
+    #repos .col-md-6 .btn {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #repos .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: right;
+    }
+
+    #repos .col-md-6 .btn {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #repos .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: right;
+    }
+
+    #repos .col-md-6 .btn {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}
+
+/* BUTON STİLLERİ */
+.btn {
+    background-color: #EEEEEE;
+    color: #222831;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #0e111f;
+    color: #EEEEEE;
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark {
+    background-color: #EEEEEE;
+    color: #222831;
+}
+
+.btn-dark:hover {
+    background-color: #0e111f;
+    color: #EEEEEE;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: #EEEEEE;
+}
+
+.btn-info:hover {
+    background-color: #117a8b;
+    color: #EEEEEE;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #EEEEEE;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+    color: #EEEEEE;
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark-custom {
+    background-color: #0e111f;
+    color: #EEEEEE;
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark-custom:hover {
+    background-color: #dad8d8;
+    color: #222831;
+}
+
+/* INPUT ALANI STİLLERİ */
+.form-control {
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:hover {
+    border-color: #b8c2cc;
+}
+
+.col-md-8 {
+    padding: 0 15px;
+}
+
+.btn-group {
+    margin-bottom: 10px;
+}
+
+.list-group {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.list-group-item {
+    background-color: #EEEEEE;
+    border-color: #dee2e6;
+}
+
+.list-group-item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.list-group-item img {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
